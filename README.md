@@ -7,6 +7,16 @@ The rhyme helper now accepts a seed word and checks a short set of practice line
 
 The script asks for a seed word and a syllable target. Press Enter at each prompt for `light` and `8`. Enter one English word and a positive whole-number target. To compare another seed, run again and enter `flow` at the first prompt. Changing the seed changes the suggestions; it does not rewrite the practice lines.
 
+### Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python rhyme_desk.py
+```
+
+
 ### Which files matter?
 
 - `rhyme_desk.py` contains the two helper functions and the session steps.
